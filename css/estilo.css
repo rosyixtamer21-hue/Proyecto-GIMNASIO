@@ -1,0 +1,177 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#111;
+    color:white;
+}
+
+header{
+    background:#000;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 40px;
+}
+
+.logo h1{
+    color:white;
+}
+
+.logo span{
+    color:red;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:20px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+nav ul li a:hover{
+    color:red;
+}
+
+.portada{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    padding:50px;
+    flex-wrap:wrap;
+}
+
+.texto-portada{
+    width:45%;
+}
+
+.texto-portada h2{
+    font-size:40px;
+    color:red;
+    margin-bottom:20px;
+}
+
+.texto-portada p{
+    margin-bottom:20px;
+    line-height:1.6;
+}
+
+.boton{
+    background:red;
+    color:white;
+    text-decoration:none;
+    padding:12px 25px;
+    border-radius:5px;
+}
+
+.boton:hover{
+    background:white;
+    color:red;
+}
+
+.imagen-portada img{
+    width:450px;
+    border-radius:10px;
+}
+
+.beneficios,
+.galeria,
+.servicios,
+.ubicacion{
+    padding:50px;
+    text-align:center;
+}
+
+.contenedor{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+    margin-top:30px;
+}
+
+.caja{
+    background:#222;
+    width:250px;
+    padding:20px;
+    border-radius:10px;
+}
+
+.caja h3{
+    color:red;
+    margin-bottom:10px;
+}
+
+.imagenes{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+    margin-top:20px;
+}
+
+.imagenes img{
+    width:250px;
+    border-radius:10px;
+}
+
+.servicios ul{
+    list-style:none;
+    margin-top:20px;
+}
+
+.servicios li{
+    margin:10px 0;
+}
+
+.ubicacion a{
+    color:red;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+footer{
+    background:#000;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+
+@media(max-width:768px){
+
+    .portada{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .texto-portada{
+        width:100%;
+        margin-bottom:30px;
+    }
+
+    .imagen-portada img{
+        width:90%;
+    }
+
+    nav ul{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    nav ul li{
+        margin:10px 0;
+    }
+
+}
