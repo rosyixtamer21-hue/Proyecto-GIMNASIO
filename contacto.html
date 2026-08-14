@@ -30,20 +30,20 @@
             Estamos ubicados en Cantón Chuitinamit, San Juan La Laguna, Sololá. ¡Visítanos!
         </p>
 
-        <form action="#" method="POST" style="background-color: #141414; padding: 30px; border-radius: 8px; border: 1px solid #222;">
+       <form id="formContacto" action="#" method="POST" style="background-color: #141414; padding: 30px; border-radius: 8px; border: 1px solid #222;">
             <div style="margin-bottom: 20px;">
                 <label style="display: block; margin-bottom: 8px; font-weight: bold;">Tu Nombre:</label>
-                <input type="text" placeholder="Escribe tu nombre" style="width: 100%; padding: 12px; background-color: #0b0b0b; border: 1px solid #333; color: white; border-radius: 4px;">
+                <input type="text" id="nombre" placeholder="Escribe tu nombre" style="width: 100%; padding: 12px; background-color: #0b0b0b; border: 1px solid #333; color: white; border-radius: 4px;">
             </div>
 
             <div style="margin-bottom: 20px;">
                 <label style="display: block; margin-bottom: 8px; font-weight: bold;">Tu Correo:</label>
-                <input type="email" placeholder="correo@ejemplo.com" style="width: 100%; padding: 12px; background-color: #0b0b0b; border: 1px solid #333; color: white; border-radius: 4px;">
+                <input type="email" id="correo" placeholder="correo@ejemplo.com" style="width: 100%; padding: 12px; background-color: #0b0b0b; border: 1px solid #333; color: white; border-radius: 4px;">
             </div>
 
             <div style="margin-bottom: 20px;">
                 <label style="display: block; margin-bottom: 8px; font-weight: bold;">Mensaje:</label>
-                <textarea rows="4" placeholder="¿En qué te podemos ayudar?" style="width: 100%; padding: 12px; background-color: #0b0b0b; border: 1px solid #333; color: white; border-radius: 4px;"></textarea>
+                <textarea id="mensaje" rows="4" placeholder="¿En qué te podemos ayudar?" style="width: 100%; padding: 12px; background-color: #0b0b0b; border: 1px solid #333; color: white; border-radius: 4px;"></textarea>
             </div>
 
             <button type="submit" style="width: 100%; background-color: #e31b23; color: white; padding: 14px; border: none; font-weight: bold; border-radius: 4px; cursor: pointer;">ENVIAR MENSAJE</button>
@@ -54,5 +54,7 @@
         <p>San Juan La Laguna, Sololá</p>
     </footer>
 
+    <!-- CONEXIÓN CON JAVASCRIPT -->
+    <script src="js/script.js"></script>
 </body>
 </html>
